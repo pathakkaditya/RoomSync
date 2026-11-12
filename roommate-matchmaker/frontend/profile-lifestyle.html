@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lifestyle | RoomSync</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Room<span>Sync</span></div>
+
+        <div class="progress-text">
+            Step <strong>2</strong> of 4
+        </div>
+    </nav>
+
+
+    <main class="profile-page">
+
+        <div class="progress-bar">
+            <div class="progress-fill step-2"></div>
+        </div>
+
+
+        <section class="form-container">
+
+            <div class="form-heading">
+                <p class="section-label">STEP 02</p>
+
+                <h1>What's your lifestyle like?</h1>
+
+                <p>
+                    Small daily habits can make a big difference
+                    when you're sharing a room.
+                </p>
+            </div>
+
+
+            <form id="lifestyleForm">
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label for="sleepTime">Usual Sleep Time</label>
+
+                        <input
+                            type="time"
+                            id="sleepTime"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="wakeTime">Usual Wake-up Time</label>
+
+                        <input
+                            type="time"
+                            id="wakeTime"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="cleanliness">
+                            Cleanliness <span id="cleanlinessValue">5</span>/10
+                        </label>
+
+                        <input
+                            type="range"
+                            id="cleanliness"
+                            min="1"
+                            max="10"
+                            value="5"
+                        >
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="studyHours">
+                            Average Study Hours / Day
+                        </label>
+
+                        <input
+                            type="number"
+                            id="studyHours"
+                            min="0"
+                            max="16"
+                            step="0.5"
+                            placeholder="e.g. 4"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="input-group full-width">
+                        <label for="noise">Room Noise Preference</label>
+
+                        <select id="noise" required>
+                            <option value="">Select preference</option>
+                            <option value="quiet">Prefer Quiet</option>
+                            <option value="moderate">Moderate Noise</option>
+                            <option value="any">Doesn't Matter</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="social">
+                            Social Level <span id="socialValue">5</span>/10
+                        </label>
+
+                        <input
+                            type="range"
+                            id="social"
+                            min="1"
+                            max="10"
+                            value="5"
+                        >
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="guests">Guests / Visitors</label>
+
+                        <select id="guests" required>
+                            <option value="">How often?</option>
+                            <option value="never">Never</option>
+                            <option value="rarely">Rarely</option>
+                            <option value="sometimes">Sometimes</option>
+                            <option value="often">Often</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="food">Food Preference</label>
+
+                        <select id="food" required>
+                            <option value="">Select preference</option>
+                            <option value="veg">Vegetarian</option>
+                            <option value="nonveg">Non-Vegetarian</option>
+                            <option value="both">Both</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <div class="form-footer">
+
+                    <a href="profile-basic.html" class="back-btn">
+                        ← Back
+                    </a>
+
+                    <button type="submit" class="primary-btn">
+                        Continue →
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

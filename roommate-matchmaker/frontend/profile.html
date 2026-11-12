@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Create Your Profile</h1>
+        <p>Tell us about yourself and your roommate preferences.</p>
+    </header>
+
+    <main>
+
+        <form>
+
+            <h2>Basic Information</h2>
+
+            <label>Name</label>
+            <input type="text" id="name" required>
+
+            <label>Age</label>
+            <input type="number" id="age" min="16" max="30" required>
+
+            <label>Gender</label>
+            <select id="gender" required>
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <label>Home State</label>
+            <input type="text" id="state" required>
+
+            <label>College</label>
+            <input type="text" id="college" required>
+
+            <label>Course</label>
+            <input type="text" id="course" required>
+
+            <label>Year</label>
+            <select id="year" required>
+                <option value="">Select</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+
+
+            <h2>Lifestyle</h2>
+
+            <label>Sleep Time</label>
+            <input type="time" id="sleepTime" required>
+
+            <label>Wake-up Time</label>
+            <input type="time" id="wakeTime" required>
+
+            <label>Cleanliness (1-10)</label>
+            <input type="number" id="cleanliness" min="1" max="10" required>
+
+            <label>Average Study Hours / Day</label>
+            <input type="number" id="studyHours" min="0" max="24" step="0.5" required>
+
+            <label>Noise Preference</label>
+            <select id="noise" required>
+                <option value="">Select</option>
+                <option>Quiet</option>
+                <option>Moderate</option>
+                <option>Doesn't Matter</option>
+            </select>
+
+            <label>Social Level (1-10)</label>
+            <input type="number" id="social" min="1" max="10" required>
+
+            <label>Guest Frequency</label>
+            <select id="guests" required>
+                <option value="">Select</option>
+                <option>Never</option>
+                <option>Rarely</option>
+                <option>Sometimes</option>
+                <option>Often</option>
+            </select>
+
+            <label>Food Preference</label>
+            <select id="food" required>
+                <option value="">Select</option>
+                <option>Vegetarian</option>
+                <option>Non-Vegetarian</option>
+                <option>Both</option>
+            </select>
+
+
+            <h2>Hostel Preferences</h2>
+
+            <p>Set your preferred hostels in order:</p>
+
+            <label>1st Preference</label>
+            <select id="hostel1" required>
+                <option value="">Select Hostel</option>
+                <option>BH-4</option>
+                <option>BH-5</option>
+                <option>BH-6</option>
+                <option>BH-7</option>
+            </select>
+
+            <label>2nd Preference</label>
+            <select id="hostel2" required>
+                <option value="">Select Hostel</option>
+                <option>BH-4</option>
+                <option>BH-5</option>
+                <option>BH-6</option>
+                <option>BH-7</option>
+            </select>
+
+            <label>3rd Preference</label>
+            <select id="hostel3" required>
+                <option value="">Select Hostel</option>
+                <option>BH-4</option>
+                <option>BH-5</option>
+                <option>BH-6</option>
+                <option>BH-7</option>
+            </select>
+
+            <label>4th Preference</label>
+            <select id="hostel4" required>
+                <option value="">Select Hostel</option>
+                <option>BH-4</option>
+                <option>BH-5</option>
+                <option>BH-6</option>
+                <option>BH-7</option>
+            </select>
+
+
+            <button type="submit">Find My Matches</button>
+
+        </form>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

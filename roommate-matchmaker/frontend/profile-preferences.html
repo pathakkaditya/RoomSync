@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roommate Preferences | RoomSync</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Room<span>Sync</span></div>
+
+        <div class="progress-text">
+            Step <strong>3</strong> of 4
+        </div>
+    </nav>
+
+
+    <main class="profile-page">
+
+        <div class="progress-bar">
+            <div class="progress-fill step-3"></div>
+        </div>
+
+
+        <section class="form-container">
+
+            <div class="form-heading">
+                <p class="section-label">STEP 03</p>
+
+                <h1>What do you prefer in a roommate?</h1>
+
+                <p>
+                    These preferences help us understand what kind
+                    of room environment works best for you.
+                </p>
+            </div>
+
+
+            <form id="preferencesForm">
+
+                <div class="form-grid">
+
+                    <div class="input-group full-width">
+                        <label for="roomType">Preferred Room Type</label>
+
+                        <select id="roomType" required>
+                            <option value="">Select room type</option>
+                            <option value="single">Single Sharing</option>
+                            <option value="double">Double Sharing</option>
+                            <option value="triple">Triple Sharing</option>
+                            <option value="triple">Quadruple Sharing</option>
+                            <option value="any">No Preference</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="acPreference">AC Preference</label>
+
+                        <select id="acPreference" required>
+                            <option value="">Select</option>
+                            <option value="ac">AC</option>
+                            <option value="non-ac">Non-AC</option>
+                            <option value="any">No Preference</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="sharing">Sharing Personal Things</label>
+
+                        <select id="sharing" required>
+                            <option value="">Select</option>
+                            <option value="yes">Comfortable Sharing</option>
+                            <option value="sometimes">Sometimes</option>
+                            <option value="no">Prefer Not To Share</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="roomTemperature">Room Temperature</label>
+
+                        <select id="roomTemperature" required>
+                            <option value="">Select</option>
+                            <option value="cold">Prefer Cooler</option>
+                            <option value="normal">Normal</option>
+                            <option value="warm">Prefer Warmer</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="lights">Lights At Night</label>
+
+                        <select id="lights" required>
+                            <option value="">Select</option>
+                            <option value="off">Prefer Lights Off</option>
+                            <option value="dim">Dim Lights</option>
+                            <option value="on">Lights Can Stay On</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group full-width">
+
+                        <label>
+                            What matters most to you in a roommate?
+                        </label>
+
+                        <div class="choice-grid">
+
+                            <label class="choice-card">
+                                <input
+                                    type="checkbox"
+                                    name="priority"
+                                    value="cleanliness"
+                                >
+                                <span>Cleanliness</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input
+                                    type="checkbox"
+                                    name="priority"
+                                    value="quiet"
+                                >
+                                <span>Quiet Environment</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input
+                                    type="checkbox"
+                                    name="priority"
+                                    value="study"
+                                >
+                                <span>Study Focused</span>
+                            </label>
+
+                            <label class="choice-card">
+                                <input
+                                    type="checkbox"
+                                    name="priority"
+                                    value="social"
+                                >
+                                <span>Social</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-footer">
+
+                    <a href="profile-lifestyle.html" class="back-btn">
+                        ← Back
+                    </a>
+
+                    <button type="submit" class="primary-btn">
+                        Continue →
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
